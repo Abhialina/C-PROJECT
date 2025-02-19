@@ -4,7 +4,7 @@ int calculator(){
     int choice;
     while(1){
 
-        printf("\n---CALCULATOR---");
+        printf("\n---CALCULATORRRRR---");
         printf("\n1.Sum\n");
         printf("2.Difference\n");
         printf("3.Product\n");
