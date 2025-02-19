@@ -1,65 +1,84 @@
 #include<stdio.h>
 int main();
-void sum(){
-    int n;
-    printf("Enter Row and Column : ");
-    scanf("%d", &n);
 
-    int a[n][n], b[n][n],c[n][n];
-    printf("Enter elements of 1st matrix : ");
+int input(int n, int mat[n][n], char *ch){
+    printf("Enter Elements of %s matrix :\n", ch);
     for(int i = 0; i < n; i++){
         for(int j = 0; j < n; j++){
-            scanf("%d", &a[i][j]);
+            scanf("%d", &mat[i][j]);
         }
     }
-    printf("Enter elements of 2nd matrix : ");
+}
+int sum(int n){
+    int a[n][n], b[n][n], c[n][n];
+    input(n, a, "1st");
+    input(n, b, "2nd");
+    printf("Sum of matrices : \n");
     for(int i = 0; i < n; i++){
         for(int j = 0; j < n; j++){
-            scanf("%d", &b[i][j]);
+            c[i][j] = a[i][j] + b[i][j];
+            printf("%4d", c[i][j]);
         }
+        printf("\n");
     }
-    printf("Sum of both matrix : ");
+
+}
+int diff(int n){
+    int a[n][n], b[n][n], c[n][n];
+    input(n, a, "1st");
+    input(n, b, "2nd");
+    printf("Difference of matrices  : \n");
     for(int i = 0; i < n; i++){
         for(int j = 0; j < n; j++){
-            printf("%4d", a[i][j] + b[i][j]);
+            c[i][j] = a[i][j] - b[i][j];
+            printf("%4d", c[i][j]);
         }
         printf("\n");
     }
 }
-
-void diff(){
-    
+int multi(int n){
+    int a[n][n], b[n][n], c[n][n];
+    input(n, a, "1st");
+    input(n, b, "2nd");
+    printf("Multiplication of matrices : \n");
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < n; j++){
+            c[i][j] = 0;
+            for(int k = 0; k < n; k++){
+                c[i][j] += a[i][k] * b[k][j];
+            }
+            printf("%4d", c[i][j]);
+        }
+        printf("\n");
+        }
 }
-
-void multi(){
-
-}
-
-void matrix(){
+int matrix(){
     int choice;
     while(1){
         printf("\n---MATRIX---\n");
         printf("1.Sum\n");
         printf("2.Difference\n");
         printf("3.Multiplication\n");
-        printf("4.Adjoint of matrix\n");
-        printf("5.Lower triangular matrix\n");
-        printf("6.\n");
         printf("0.Back\n");
-        printf("Enter choice : ");
+        printf("Enter Choice : ");
         scanf("%d", &choice);
 
+        if(choice == 0){
+            return main();
+        }
+        int n;
+        printf("Enter Rows and Column : ");
+        scanf("%d", &n);
         switch(choice){
-            case 1 : sum();
+            case 1 : sum(n);
                 break;
-            case 2 : diff();
+            case 2 : diff(n);
                 break;
-            case 3 : multi();
+            case 3 : multi(n);
                 break;
-            case 0 : main();
-                break;
-            default : printf("Enter valid options!");
+            default : printf("Enter valid option!");
                 break;
         }
+
     }
 }

@@ -7,6 +7,7 @@
 #include "6_prime.c"
 #include "7_quadratic.c"
 #include "8_hcf.c"
+#include "9_lcm.c"
 
 int main(){
     int choice;
@@ -19,6 +20,7 @@ int main(){
         printf("5.Prime\n");
         printf("6.Quadratic Equation\n");
         printf("7.HCF\n");
+        // printf("8.LCM\n");
         printf("0. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
@@ -38,6 +40,8 @@ int main(){
                 break;
             case 7 : hcf();
                 break;
+            // case 8 : lcm();
+            //     break;
             case 0 : 
                     printf("<-----BYE-BYE----->\n");
                     exit(0);
