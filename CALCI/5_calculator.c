@@ -6,13 +6,13 @@ int calculator(){
     int choice;
     while(1){
 
-        printf("\n---CALCULATORRRRR---");
+        printf("\n---CALCULATOR---");
         printf("\n1.Sum\n");
         printf("2.Difference\n");
         printf("3.Product\n");
         printf("4.Division\n");
         printf("5.Remainder\n");
-        printf("0. Exit\n");
+        printf("0.Back\n");
         printf("Enter choice : ");
         scanf("%d", &choice);
 
@@ -31,29 +31,26 @@ int calculator(){
     switch(choice){
 
         case 1:
-
                 printf("Sum of %.2f and %.2f is %.2f\n", a, b, a + b);
-                break;
-            case 2:
+                    break;
+        case 2:
                 printf("Difference of %.2f and %.2f is %.2f\n", a, b, a - b);
-                break;
-            case 3:
+                    break;
+        case 3:
                 printf("Product %.2f and %.2f is %.2f\n", a, b, a * b);
-                break;
-            case 4:
-                if (b != 0)
-                {
+                    break;
+        case 4:
+                if(b != 0){
                     printf("Quotient when dividing %.2f by %.2f is %.2f\n", a, b, a / b);
                 }
-                else
-                {
+                else{
                     printf("Not Defined!\n");
                 }
-                break;
-            case 5:
+                    break;
+        case 5:
                 printf("Remainder is %d\n", c % d);
-                break;
-            default:
+                    break;
+        default:
                 printf("Please Enter Valid Operator");
             }
     }
