@@ -10,8 +10,8 @@ int main(){
         printf("\n1.Swapping\n");
         printf("2.Even or Odd\n");
         printf("3.Matrix\n");
-        printf("4. \n");
-        printf("5. Exit\n");
+        //printf("4. \n");
+        printf("4. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
@@ -22,10 +22,11 @@ int main(){
             break;
         case 3 : matrix();
             break;
-        case 5 : exit(0);
+        case 4 : exit(0);
+            break;
         default : return 0;
             break;
     }
     }
-    
+
 }
