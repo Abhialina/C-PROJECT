@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include<stdlib.h>
+int main();
+
 int calculator(){
     int choice;
     while(1){
@@ -15,7 +17,6 @@ int calculator(){
         scanf("%d", &choice);
 
     if (choice == 0) {
-        //exit(0);
         return  main();
     }
 
