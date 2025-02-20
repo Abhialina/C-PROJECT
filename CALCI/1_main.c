@@ -8,6 +8,7 @@
 #include "7_quadratic.h"
 #include "8_hcf.h"
 #include "9_lcm.h"
+#include "10_factor.h"
 
 int main(){
     int choice;
@@ -21,7 +22,8 @@ int main(){
         printf("6.Quadratic Equation\n");
         printf("7.HCF\n");
         printf("8.LCM\n");
-        printf("0. Exit\n");
+        printf("9.Factor\n");
+        printf("0.Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
@@ -41,6 +43,8 @@ int main(){
             case 7 : hcf();
                 break;
             case 8 : lcm();
+                break;
+            case 9 : factor();
                 break;
             case 0 : 
                     printf("<-----BYE-BYE----->\n");
