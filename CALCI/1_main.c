@@ -1,13 +1,13 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include "2_swap.c"
-#include "3_even.c"
-#include "4_matrix.c"
-#include "5_calculator.c"
-#include "6_prime.c"
-#include "7_quadratic.c"
-#include "8_hcf.c"
-#include "9_lcm.c"
+#include "2_swap.h"
+#include "3_even.h"
+#include "4_matrix.h"
+#include "5_calculator.h"
+#include "6_prime.h"
+#include "7_quadratic.h"
+#include "8_hcf.h"
+#include "9_lcm.h"
 
 int main(){
     int choice;
