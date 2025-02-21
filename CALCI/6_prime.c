@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int isPrime(int num){
     if (num < 2) 
         return 0;
@@ -14,7 +13,6 @@ void prime() {
     int n, m;
     printf("Enter the range: ");
     scanf("%d %d", &n, &m);
-
     printf("Prime numbers between %d and %d are: ", n, m);
     for (int i = n; i <= m; i++) {
         if (isPrime(i)) {
