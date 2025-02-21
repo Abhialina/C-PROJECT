@@ -1,13 +1,14 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include "2_swap.c"
-#include "3_even.c"
-#include "4_matrix.c"
-#include "5_calculator.c"
-#include "6_prime.c"
-#include "7_quadratic.c"
-#include "8_hcf.c"
-#include "9_lcm.c"
+#include "2_swap.h"
+#include "3_even.h"
+#include "4_matrix.h"
+#include "5_calculator.h"
+#include "6_prime.h"
+#include "7_quadratic.h"
+#include "8_hcf.h"
+#include "9_lcm.h"
+#include "10_factor.h"
 
 int main(){
     int choice;
@@ -20,8 +21,9 @@ int main(){
         printf("5.Prime\n");
         printf("6.Quadratic Equation\n");
         printf("7.HCF\n");
-        // printf("8.LCM\n");
-        printf("0. Exit\n");
+        printf("8.LCM\n");
+        printf("9.Factor\n");
+        printf("0.Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
@@ -40,8 +42,10 @@ int main(){
                 break;
             case 7 : hcf();
                 break;
-            // case 8 : lcm();
-            //     break;
+            case 8 : lcm();
+                break;
+            case 9 : factor();
+                break;
             case 0 : 
                     printf("<-----BYE-BYE----->\n");
                     exit(0);
