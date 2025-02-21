@@ -9,9 +9,11 @@
 #include "8_hcf.h"
 #include "9_lcm.h"
 #include "10_factor.h"
+//#include "11_sumofdigit.c"
 
 int main(){
     int choice;
+    //hello();
     while(1){
         printf("\n----MAIN MENU----");
         printf("\n1.Swapping\n");
