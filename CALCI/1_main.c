@@ -9,7 +9,8 @@
 #include "8_hcf.h"
 #include "9_lcm.h"
 #include "10_factor.h"
-//#include "11_sumofdigit.c"
+#include "12_countof_digit.h"
+// #include "11_sumofdigit.c"
 
 int main(){
     int choice;
@@ -25,6 +26,7 @@ int main(){
         printf("7.HCF\n");
         printf("8.LCM\n");
         printf("9.Factor\n");
+        printf("10.Count the Numer of Digit\n");
         printf("0.Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
@@ -48,6 +50,8 @@ int main(){
                 break;
             case 9 : factor();
                 break;
+            case 10 :count();
+            break;
             case 0 : 
                     printf("<-----BYE-BYE----->\n");
                     exit(0);
