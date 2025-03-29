@@ -22,7 +22,7 @@ void multi(){
             scanf("%d", &b[i][j]);
         }
     }
-
+    printf("Multiplication of matrices : \n");
     for(i = 0; i < x; i++){
         for(j = 0; j < m; j++){
             c[i][j] = 0;
